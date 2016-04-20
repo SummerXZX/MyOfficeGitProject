@@ -10,9 +10,9 @@
 
 @interface MyPhotoBrowserViewController ()<UIScrollViewDelegate>
 
-@property (nonatomic,strong) UIScrollView *scrollView;
+@property (strong, nonatomic) UIScrollView *scrollView;
 
-@property (nonatomic,strong) UIImageView *imageView;
+@property (strong, nonatomic) UIImageView *imageView;
 
 @end
 
