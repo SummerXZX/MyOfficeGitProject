@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeNoBookCell" id="gTV-IL-0wX" customClass="HomeNoBookCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="180"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_right_unit_bg" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-H5-NE2">
+                        <rect key="frame" x="0.0" y="136" width="160" height="44"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="QDs-7a-faj"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rSI-H5-NE2" secondAttribute="bottom" id="0kt-Jq-HuA"/>
+                <constraint firstAttribute="trailing" secondItem="rSI-H5-NE2" secondAttribute="trailing" id="S4Q-ZD-9CO"/>
+                <constraint firstItem="rSI-H5-NE2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="n1u-8e-s8B"/>
+            </constraints>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_right_unit_bg" width="160" height="44"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeBookCell" id="gTV-IL-0wX" customClass="HomeBookCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="180"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_left_unit_bg" translatesAutoresizingMaskIntoConstraints="NO" id="rqI-qV-NT1">
+                        <rect key="frame" x="0.0" y="136" width="160" height="44"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="tJa-4c-171"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_book_bg" translatesAutoresizingMaskIntoConstraints="NO" id="MzZ-6K-1fp">
+                        <rect key="frame" x="30" y="10" width="100" height="130"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="NQ2-6F-Zaq"/>
+                            <constraint firstAttribute="width" constant="100" id="YEz-8r-whe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一年级上册" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNz-hu-UM6">
+                        <rect key="frame" x="20" y="96" width="120" height="40"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="VOF-7U-AsJ"/>
+                            <constraint firstAttribute="width" constant="120" id="qd0-ut-82T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rqI-qV-NT1" secondAttribute="bottom" id="HJd-WA-N54"/>
+                <constraint firstItem="rqI-qV-NT1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JMc-gq-Tkl"/>
+                <constraint firstItem="eNz-hu-UM6" firstAttribute="centerX" secondItem="MzZ-6K-1fp" secondAttribute="centerX" id="bDJ-CH-2d9"/>
+                <constraint firstAttribute="trailing" secondItem="rqI-qV-NT1" secondAttribute="trailing" id="keG-uR-q57"/>
+                <constraint firstItem="MzZ-6K-1fp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="kks-6f-2a5"/>
+                <constraint firstItem="rqI-qV-NT1" firstAttribute="top" secondItem="eNz-hu-UM6" secondAttribute="bottom" id="l5y-FY-ezf"/>
+                <constraint firstItem="MzZ-6K-1fp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="umF-eL-siH"/>
+            </constraints>
+            <size key="customSize" width="160" height="180"/>
+            <connections>
+                <outlet property="bookImageView" destination="MzZ-6K-1fp" id="VQ5-Zy-EmX"/>
+                <outlet property="bookNameLabel" destination="eNz-hu-UM6" id="lEr-Nl-Ef6"/>
+                <outlet property="itemBgImageView" destination="rqI-qV-NT1" id="diW-bf-ghZ"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="296"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_book_bg" width="96" height="135"/>
+        <image name="home_left_unit_bg" width="160" height="44"/>
+    </resources>
+</document>

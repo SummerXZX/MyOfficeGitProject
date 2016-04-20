@@ -1,0 +1,2 @@
+PODS_JPUSH_IOS_SDK_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/JPush-iOS-SDK/Pod/Classes"
+PODS_JPUSH_IOS_SDK_OTHER_LDFLAGS = -weak_library /usr/lib/libz.dylib -l"PushSDK-1.8.3" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
