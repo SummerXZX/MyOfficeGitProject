@@ -50,6 +50,7 @@
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view).insets(UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0));
     }];
+    
     self.imageView.image = [UIImage imageNamed:self.imageUrl.relativePath];
     [self.scrollView addSubview:self.imageView];
     _scrollView.contentSize = self.imageView.image.size;
