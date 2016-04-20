@@ -1,0 +1,19 @@
+//
+//  YMCorporationIOS.pch
+//  YMCorporationIOS
+//
+//  Created by test on 15/6/25.
+//  Copyright (c) 2015年 yimi. All rights reserved.
+//
+
+#ifndef YMCorporationIOS_YMCorporationIOS_pch
+#define YMCorporationIOS_YMCorporationIOS_pch
+
+#import "AppConfig.h"
+#import "YMWebServiceClient.h"
+#import "ProjectUtil.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

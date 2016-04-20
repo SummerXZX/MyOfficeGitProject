@@ -1,0 +1,10 @@
+pod "SDWebImage","~> 3.7.3"
+pod "MJRefresh","~> 3.0.7"
+pod "FMDB","~> 2.5"
+pod "UMengAnalytics-NO-IDFA","~> 3.6.7"
+pod "MJExtension","~> 3.0.7"
+pod "AFNetworking","~> 3.0.4"
+pod "IQKeyboardManager","~> 3.3.4"
+pod 'PinYin4Objc', '~> 1.1.1'
+
+

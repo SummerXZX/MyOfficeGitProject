@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReportStuInfoCell" id="KGk-i7-Jjw" customClass="ReportStuInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-ti-Ofb">
+                        <rect key="frame" x="70" y="10" width="240" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="pD6-7h-9O0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pCT-ks-abD">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="NAq-rM-gBw"/>
+                            <constraint firstAttribute="width" constant="50" id="pi1-St-ZYr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAd-dN-4hS">
+                        <rect key="frame" x="70" y="33" width="240" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="rfM-G5-Dgb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="zwgl_dh">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SVg-ti-Ofb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="1pN-4F-T5g"/>
+                    <constraint firstItem="CAd-dN-4hS" firstAttribute="leading" secondItem="pCT-ks-abD" secondAttribute="trailing" constant="10" id="A8L-73-B1B"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="SVg-ti-Ofb" secondAttribute="trailing" constant="2" id="DST-7T-vcS"/>
+                    <constraint firstItem="pCT-ks-abD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="QbR-4N-zuN"/>
+                    <constraint firstItem="SVg-ti-Ofb" firstAttribute="leading" secondItem="pCT-ks-abD" secondAttribute="trailing" constant="10" id="TEk-Xs-A5H"/>
+                    <constraint firstItem="pCT-ks-abD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="XLB-wM-Yqd"/>
+                    <constraint firstItem="CAd-dN-4hS" firstAttribute="top" secondItem="SVg-ti-Ofb" secondAttribute="bottom" constant="3" id="hMf-G6-Th0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CAd-dN-4hS" secondAttribute="trailing" constant="2" id="yS9-ZR-GAH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoLabel" destination="SVg-ti-Ofb" id="FOJ-qi-389"/>
+                <outlet property="phoneBtn" destination="CAd-dN-4hS" id="uVm-mR-653"/>
+                <outlet property="sexImageView" destination="pCT-ks-abD" id="Kes-co-PRG"/>
+            </connections>
+            <point key="canvasLocation" x="237" y="229"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="zwgl_dh" width="15" height="15"/>
+    </resources>
+</document>

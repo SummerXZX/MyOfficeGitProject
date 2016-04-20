@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportCountViewController">
+            <connections>
+                <outlet property="topSegment" destination="Xf6-cS-RlX" id="ZcQ-Jk-g80"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xf6-cS-RlX">
+                    <rect key="frame" x="25" y="10" width="270" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="PJ8-ca-pmo"/>
+                    </constraints>
+                    <segments>
+                        <segment title="全部"/>
+                        <segment title="待签约"/>
+                        <segment title="已签约"/>
+                    </segments>
+                    <color key="tintColor" red="0.2784313725" green="0.72156862749999995" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="topSegmentAction:" destination="-1" eventType="valueChanged" id="orc-WO-HIb"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Xf6-cS-RlX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="JKk-Eh-55M"/>
+                <constraint firstItem="Xf6-cS-RlX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="bhs-eP-uPs"/>
+                <constraint firstAttribute="trailing" secondItem="Xf6-cS-RlX" secondAttribute="trailing" constant="25" id="sLs-uY-IjT"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="351" y="121"/>
+        </view>
+    </objects>
+</document>

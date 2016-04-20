@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FillWorkTimeCell" rowHeight="60" id="KGk-i7-Jjw" customClass="FillWorkTimeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irx-ds-SFU">
+                        <rect key="frame" x="10" y="10" width="125" height="40"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Mid-Yf-mdJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="请选择工作时间">
+                            <color key="titleColor" red="0.52156862749999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0h-nJ-jHe">
+                        <rect key="frame" x="270" y="15" width="40" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Mw5-ZA-iH9"/>
+                            <constraint firstAttribute="height" constant="30" id="SnE-FZ-BO7"/>
+                        </constraints>
+                        <state key="normal" title="添加">
+                            <color key="titleColor" red="0.85490196080000003" green="0.3411764706" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrV-AU-tPs">
+                        <rect key="frame" x="145" y="10" width="125" height="40"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Myc-0P-LH0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="17" maxY="0.0"/>
+                        <state key="normal" title="小时">
+                            <color key="titleColor" red="0.52156862749999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="job_bsinfo_sanj" translatesAutoresizingMaskIntoConstraints="NO" id="SOf-bo-L2c">
+                        <rect key="frame" x="255" y="26" width="12" height="7"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="Vmp-9h-6a4"/>
+                            <constraint firstAttribute="height" constant="7" id="bWx-EW-YSa"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入时长" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W96-Ft-EaV">
+                        <rect key="frame" x="155" y="10" width="70" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4A9-Pp-U9y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                <color key="value" red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="irx-ds-SFU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="1bZ-Zt-6fZ"/>
+                    <constraint firstItem="irx-ds-SFU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="9Uz-Xc-7we"/>
+                    <constraint firstItem="NrV-AU-tPs" firstAttribute="width" secondItem="irx-ds-SFU" secondAttribute="width" id="ANR-QA-HzE"/>
+                    <constraint firstItem="g0h-nJ-jHe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="EVA-0d-GJg"/>
+                    <constraint firstItem="SOf-bo-L2c" firstAttribute="trailing" secondItem="NrV-AU-tPs" secondAttribute="trailing" constant="-3" id="EbP-3a-ba7"/>
+                    <constraint firstItem="SOf-bo-L2c" firstAttribute="top" secondItem="NrV-AU-tPs" secondAttribute="top" constant="16" id="G60-v0-OGn"/>
+                    <constraint firstItem="W96-Ft-EaV" firstAttribute="trailing" secondItem="NrV-AU-tPs" secondAttribute="trailing" constant="-45" id="Hw4-b3-heQ"/>
+                    <constraint firstItem="NrV-AU-tPs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="UXV-A3-MJ1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="g0h-nJ-jHe" secondAttribute="trailing" constant="2" id="Umx-FG-sjF"/>
+                    <constraint firstItem="g0h-nJ-jHe" firstAttribute="leading" secondItem="NrV-AU-tPs" secondAttribute="trailing" id="WbE-Xb-Vzt"/>
+                    <constraint firstItem="W96-Ft-EaV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="kXv-z1-2Ec"/>
+                    <constraint firstItem="irx-ds-SFU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="mdP-WS-5qN"/>
+                    <constraint firstItem="NrV-AU-tPs" firstAttribute="leading" secondItem="irx-ds-SFU" secondAttribute="trailing" constant="10" id="o3O-fG-7Kg"/>
+                    <constraint firstItem="W96-Ft-EaV" firstAttribute="leading" secondItem="NrV-AU-tPs" secondAttribute="leading" constant="10" id="vDT-BF-ApZ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="1bZ-Zt-6fZ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="addCellBtn" destination="g0h-nJ-jHe" id="Kbk-Ih-YDA"/>
+                <outlet property="chooseWorkTimeBtn" destination="irx-ds-SFU" id="Bsh-tE-01A"/>
+                <outlet property="chooseWorkTimeUnitBtn" destination="NrV-AU-tPs" id="DY6-Yb-31P"/>
+                <outlet property="workTimeField" destination="W96-Ft-EaV" id="FO6-cB-Wmd"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="152"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="job_bsinfo_sanj" width="12" height="7"/>
+    </resources>
+</document>

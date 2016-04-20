@@ -1,0 +1,21 @@
+//
+//  NewYMOCCorpProject.pch
+//  NewYMOCCorpProject
+//
+//  Created by test on 15/12/31.
+//  Copyright © 2015年 yimi. All rights reserved.
+//
+
+#ifndef NewYMOCCorpProject_pch
+#define NewYMOCCorpProject_pch
+
+
+#import "AppConfig.h"
+#import "YMWebClient.h"
+#import "ProjectUtil.h"
+#import "UIViewController+ProjectCategory.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* NewYMOCCorpProject_pch */

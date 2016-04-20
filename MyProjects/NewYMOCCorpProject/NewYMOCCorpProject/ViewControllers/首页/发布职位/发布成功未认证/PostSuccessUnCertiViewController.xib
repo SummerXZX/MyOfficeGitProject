@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostSuccessUnCertiViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的职位正在审核中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P8-WD-osd">
+                    <rect key="frame" x="50" y="170" width="220" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="1Sd-39-IUA"/>
+                        <constraint firstAttribute="height" constant="21" id="g0e-86-70d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注：企业资质认证后无需审核可立即发布职位信息" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="269" translatesAutoresizingMaskIntoConstraints="NO" id="GTg-sD-jYm">
+                    <rect key="frame" x="25" y="214" width="269" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="dbc-VF-wm6"/>
+                        <constraint firstAttribute="width" constant="269" id="hxh-OO-wyY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOL-Ce-ATM">
+                    <rect key="frame" x="30" y="279" width="260" height="40"/>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.63921568627450975" blue="0.19215686274509805" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="89n-pn-9jf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="职位管理">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="jumpToJobManager" destination="-1" eventType="touchUpInside" id="rkn-pl-XSo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRU-qK-OIF">
+                    <rect key="frame" x="30" y="345" width="260" height="40"/>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.41176470588235292" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Z5h-H8-Ztv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="申请认证">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="applyCerti" destination="-1" eventType="touchUpInside" id="PID-Iz-bVG"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zwgl_wsh" translatesAutoresizingMaskIntoConstraints="NO" id="35p-pZ-Mai">
+                    <rect key="frame" x="106" y="40" width="107" height="107"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="107" id="Teb-27-PjP"/>
+                        <constraint firstAttribute="width" constant="107" id="zLK-NH-75n"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hOL-Ce-ATM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="86g-yC-HUJ"/>
+                <constraint firstItem="GTg-sD-jYm" firstAttribute="top" secondItem="5P8-WD-osd" secondAttribute="bottom" constant="23" id="8ej-Se-8AN"/>
+                <constraint firstItem="35p-pZ-Mai" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="Asx-vh-xiF"/>
+                <constraint firstItem="PRU-qK-OIF" firstAttribute="top" secondItem="hOL-Ce-ATM" secondAttribute="bottom" constant="26" id="C1i-dC-238"/>
+                <constraint firstItem="35p-pZ-Mai" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LRe-Ld-LeR"/>
+                <constraint firstAttribute="trailing" secondItem="hOL-Ce-ATM" secondAttribute="trailing" constant="30" id="Tiz-nN-cxc"/>
+                <constraint firstItem="5P8-WD-osd" firstAttribute="top" secondItem="35p-pZ-Mai" secondAttribute="bottom" constant="23" id="UXk-7g-jzw"/>
+                <constraint firstItem="5P8-WD-osd" firstAttribute="centerX" secondItem="35p-pZ-Mai" secondAttribute="centerX" id="gi9-Xo-h2b"/>
+                <constraint firstItem="GTg-sD-jYm" firstAttribute="centerX" secondItem="5P8-WD-osd" secondAttribute="centerX" id="lUU-mh-HWn"/>
+                <constraint firstItem="PRU-qK-OIF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="uhd-jU-NWm"/>
+                <constraint firstItem="hOL-Ce-ATM" firstAttribute="top" secondItem="GTg-sD-jYm" secondAttribute="bottom" constant="15" id="vAo-7J-Suk"/>
+                <constraint firstAttribute="trailing" secondItem="PRU-qK-OIF" secondAttribute="trailing" constant="30" id="xgl-4d-qxf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zwgl_wsh" width="107" height="107"/>
+    </resources>
+</document>

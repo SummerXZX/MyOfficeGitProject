@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "b7f1527c-7fd4-4a04-9406-5a12d3ccdffb++3547",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "9c74508c-f405-854d-b239-1867b85415d6++3946" : {
+
+    },
+    "b7f1527c-7fd4-4a04-9406-5a12d3ccdffb++3547" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9c74508c-f405-854d-b239-1867b85415d6++3946" : 0,
+    "b7f1527c-7fd4-4a04-9406-5a12d3ccdffb++3547" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ECE75F31-BD94-45C9-AC8B-D779F3347C38",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9c74508c-f405-854d-b239-1867b85415d6++3946" : "YMCorporationIOS\/",
+    "b7f1527c-7fd4-4a04-9406-5a12d3ccdffb++3547" : "yimi_ios_corp%20(trunk)\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YMCorporationIOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YMCorporationIOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.199.98\/svn\/yimi_ios_corp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9c74508c-f405-854d-b239-1867b85415d6++3946"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.100.98",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b7f1527c-7fd4-4a04-9406-5a12d3ccdffb++3547"
+    }
+  ]
+}
