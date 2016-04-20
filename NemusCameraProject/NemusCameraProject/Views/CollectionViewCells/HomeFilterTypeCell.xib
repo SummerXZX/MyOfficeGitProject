@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeFilterTypeCell" id="gTV-IL-0wX" customClass="HomeFilterTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2xL-Ou-5GT">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwX-24-Mgb">
+                        <rect key="frame" x="0.0" y="30" width="50" height="20"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.50196078430000002" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="hrj-9X-zXF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2xL-Ou-5GT" secondAttribute="bottom" id="PsA-Yj-MtT"/>
+                <constraint firstItem="2xL-Ou-5GT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ulb-zo-kkJ"/>
+                <constraint firstItem="zwX-24-Mgb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Z8c-oN-Aoe"/>
+                <constraint firstAttribute="bottom" secondItem="zwX-24-Mgb" secondAttribute="bottom" id="d3n-OV-FKC"/>
+                <constraint firstAttribute="trailing" secondItem="2xL-Ou-5GT" secondAttribute="trailing" id="gVW-aa-5ht"/>
+                <constraint firstAttribute="trailing" secondItem="zwX-24-Mgb" secondAttribute="trailing" id="wMz-G0-c3Y"/>
+                <constraint firstItem="2xL-Ou-5GT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yOc-66-jMF"/>
+            </constraints>
+            <connections>
+                <outlet property="filterImageView" destination="2xL-Ou-5GT" id="6Tr-zD-gC2"/>
+                <outlet property="filterNameLabel" destination="zwX-24-Mgb" id="27p-bs-i8c"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
