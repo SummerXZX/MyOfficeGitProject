@@ -66,9 +66,10 @@
                              @{@"image":@"save_delete",@"title":@"Delete"},
                              @{@"image":@"save_more",@"title":@"More"},
                              ];
+    NSInteger btnTag = 0;
     for (NSDictionary *contentDic in contentsArr) {
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        
+        backBtn.tag = 0;
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"save_download"]];
         imageView.image = [UIImage imageNamed:contentDic[@"image"]];
         UILabel *titleLabel = [[UILabel alloc] init];
@@ -91,9 +92,10 @@
             make.right.mas_equalTo(0.0);
             make.centerY.mas_equalTo(backBtn).mas_offset(10.0);
         }];
-        
+        [backBtn addTarget:self action:@selector(backBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         [backView addSubview:backBtn];
         [viewsArr addObject:backBtn];
+        btnTag++;
     }
     
     [viewsArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:0.0 leadSpacing:0.0 tailSpacing:0.0];
@@ -111,10 +113,38 @@
     }];
 }
 
-
-
-- (void)toolBarAction {
-    
+- (void)backBtnAction:(UIButton *)sender {
+    switch (sender.tag) {
+        case 0:
+        {
+            //保存到本地相册
+            
+        }
+            break;
+        case 1:
+        {
+            //分享
+            UIActivityViewController *shareVC = [[UIActivityViewController alloc] initWithActivityItems:@[[UIImage imageNamed:@"auhpic"]] applicationActivities:nil];
+            shareVC.excludedActivityTypes = @[UIActivityTypeAirDrop];
+            [self presentViewController:shareVC animated:YES completion:NULL];
+        }
+            break;
+        case 2:
+        {
+            //删除
+        }
+            break;
+        case 3:
+        {
+            //更多
+            
+        }
+        default:
+            break;
+    }
+    UIActivityViewController *shareVC = [[UIActivityViewController alloc] initWithActivityItems:@[[UIImage imageNamed:@"auhpic"]] applicationActivities:nil];
+    shareVC.excludedActivityTypes = @[UIActivityTypeAirDrop];
+    [self presentViewController:shareVC animated:YES completion:NULL];
 }
 
 #pragma mark 图片双击手势
