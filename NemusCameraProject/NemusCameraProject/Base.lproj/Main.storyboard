@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wQp-ai-bRE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ysn-fG-74Y">
+            <objects>
+                <navigationController id="wQp-ai-bRE" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xac-RK-mdP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NfY-04-33Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKA-Ak-Fet" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="404"/>
+        </scene>
+        <!--FunnyPhotoBooth-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7n0-uw-wiO">
+                                <rect key="frame" x="0.0" y="380" width="320" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD2-Hi-c1o">
+                                        <rect key="frame" x="15" y="25" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="K26-s3-fqg"/>
+                                            <constraint firstAttribute="height" constant="50" id="YMg-dE-svF"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="checkPhotoAlbum" destination="BYZ-38-t0r" eventType="touchUpInside" id="BMV-mL-DAd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dd-cf-jTG">
+                                        <rect key="frame" x="255" y="25" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="87E-to-hO4"/>
+                                            <constraint firstAttribute="height" constant="50" id="SQF-2Y-pam"/>
+                                        </constraints>
+                                        <state key="normal" image="home_filter"/>
+                                        <connections>
+                                            <action selector="changeFilter" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNC-78-vGh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPf-f6-Gzb">
+                                        <rect key="frame" x="130" y="20" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="8d5-91-rrg"/>
+                                            <constraint firstAttribute="height" constant="60" id="gon-qw-7Oe"/>
+                                        </constraints>
+                                        <state key="normal" image="home_play"/>
+                                        <connections>
+                                            <action selector="playAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y70-e2-upe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14509803921568629" green="0.14509803921568629" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5Dd-cf-jTG" firstAttribute="centerY" secondItem="7n0-uw-wiO" secondAttribute="centerY" id="5xd-OY-L1x"/>
+                                    <constraint firstItem="wPf-f6-Gzb" firstAttribute="centerY" secondItem="7n0-uw-wiO" secondAttribute="centerY" id="BH7-Jn-TYH"/>
+                                    <constraint firstItem="FD2-Hi-c1o" firstAttribute="leading" secondItem="7n0-uw-wiO" secondAttribute="leading" constant="15" id="G1x-GF-LJ7"/>
+                                    <constraint firstItem="FD2-Hi-c1o" firstAttribute="centerY" secondItem="7n0-uw-wiO" secondAttribute="centerY" id="alM-1u-LtW"/>
+                                    <constraint firstAttribute="height" constant="100" id="ckn-f0-8Lv"/>
+                                    <constraint firstItem="wPf-f6-Gzb" firstAttribute="centerX" secondItem="7n0-uw-wiO" secondAttribute="centerX" id="oGV-96-IKw"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Dd-cf-jTG" secondAttribute="trailing" constant="15" id="wHX-nF-ZfE"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="OEK-Xv-t3B">
+                                <rect key="frame" x="14" y="342" width="292" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="znc-4F-phc"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="adjustFocusDistance:" destination="BYZ-38-t0r" eventType="valueChanged" id="Okc-gK-WmM"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OEK-Xv-t3B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IMM-5d-tAU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7n0-uw-wiO" secondAttribute="bottom" id="NUQ-Xu-oyN"/>
+                            <constraint firstItem="7n0-uw-wiO" firstAttribute="top" secondItem="OEK-Xv-t3B" secondAttribute="bottom" constant="8" id="SN8-Hm-95w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7n0-uw-wiO" secondAttribute="trailing" constant="-16" id="WJs-U4-TkR"/>
+                            <constraint firstItem="OEK-Xv-t3B" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eLU-fA-Se7"/>
+                            <constraint firstItem="7n0-uw-wiO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="nmT-OH-VD5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FunnyPhotoBooth" id="yBe-R5-1dg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="lastPhotoBtn" destination="FD2-Hi-c1o" id="QYK-1u-TBe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="404"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_filter" width="62" height="62"/>
+        <image name="home_play" width="95" height="95"/>
+    </resources>
+</document>
