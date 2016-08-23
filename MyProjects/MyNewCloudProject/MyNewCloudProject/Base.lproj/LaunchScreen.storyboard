@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2015 XinYue. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnZ-gE-6cE">
+                                <rect key="frame" x="-4" y="457.5" width="328" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Sl3-C0-dgv">
+                                <rect key="frame" x="100" y="123" width="120" height="120"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小办公" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25q-GD-TWm">
+                                <rect key="frame" x="87" y="249" width="147" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="DQo-J8-Kcy"/>
+                                    <constraint firstAttribute="height" constant="41" id="QHB-zD-NGS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.22352941176470589" green="0.71372549019607845" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jnZ-gE-6cE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="1ZK-dd-nCn"/>
+                            <constraint firstItem="Sl3-C0-dgv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-57" id="5cJ-TX-iBe"/>
+                            <constraint firstItem="25q-GD-TWm" firstAttribute="centerX" secondItem="Sl3-C0-dgv" secondAttribute="centerX" id="Cci-Ru-DlW"/>
+                            <constraint firstItem="Sl3-C0-dgv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QSb-qM-ZNG"/>
+                            <constraint firstItem="25q-GD-TWm" firstAttribute="top" secondItem="Sl3-C0-dgv" secondAttribute="bottom" constant="6" id="Sig-Wr-pMv"/>
+                            <constraint firstItem="jnZ-gE-6cE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hWS-rR-b3p"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jnZ-gE-6cE" secondAttribute="bottom" constant="9" id="q17-Zs-HW0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jnZ-gE-6cE" secondAttribute="trailing" constant="-20" id="x7M-Tx-ALq"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_avatar" width="120" height="120"/>
+    </resources>
+</document>

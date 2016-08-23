@@ -1,0 +1,23 @@
+//
+//  MyNewCloudProject.pch
+//  MyNewCloudProject
+//
+//  Created by Summer on 16/4/22.
+//  Copyright © 2016年 Summer. All rights reserved.
+//
+
+#ifndef MyNewCloudProject_pch
+#define MyNewCloudProject_pch
+
+#import "AppConfig.h"
+#import "WebClient.h"
+#import "ProjectUtil.h"
+#import "UIView+Hint.h"
+#import "UIViewController+ProjectCategory.h"
+#import <Masonry.h>
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MyNewCloudProject_pch */

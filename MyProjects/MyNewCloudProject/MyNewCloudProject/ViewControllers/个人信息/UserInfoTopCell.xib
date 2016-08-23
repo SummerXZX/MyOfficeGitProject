@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="UserInfoTopCell" rowHeight="80" id="KGk-i7-Jjw" customClass="UserInfoTopCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJR-fR-MBo">
+                        <rect key="frame" x="125" y="37" width="162" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="W11-Ks-jF5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea3-KK-p5V">
+                        <rect key="frame" x="125" y="61" width="162" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="AmM-0s-DYP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.52156862749999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="yMZ-No-MwB">
+                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="8v4-Jp-wQW"/>
+                            <constraint firstAttribute="height" constant="100" id="O5P-0k-Sr3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="50"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yMZ-No-MwB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="4k5-bm-LAo"/>
+                    <constraint firstItem="JJR-fR-MBo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="29" id="FS9-17-Mlw"/>
+                    <constraint firstItem="ea3-KK-p5V" firstAttribute="leading" secondItem="yMZ-No-MwB" secondAttribute="trailing" constant="15" id="OHD-C2-rKa"/>
+                    <constraint firstItem="yMZ-No-MwB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="SYD-Vj-0W3"/>
+                    <constraint firstItem="ea3-KK-p5V" firstAttribute="top" secondItem="JJR-fR-MBo" secondAttribute="bottom" constant="4" id="Yhb-az-MaS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ea3-KK-p5V" secondAttribute="trailing" constant="-8" id="aYG-8J-nrQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JJR-fR-MBo" secondAttribute="trailing" constant="-8" id="de1-bD-K3g"/>
+                    <constraint firstItem="JJR-fR-MBo" firstAttribute="leading" secondItem="yMZ-No-MwB" secondAttribute="trailing" constant="15" id="g3Q-N7-HMM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="yMZ-No-MwB" id="Ki8-b7-p38"/>
+                <outlet property="nameLabel" destination="JJR-fR-MBo" id="ync-Ms-Jvu"/>
+                <outlet property="positionLabel" destination="ea3-KK-p5V" id="Xl0-ul-SxN"/>
+            </connections>
+            <point key="canvasLocation" x="269" y="210"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="touxiang" width="100" height="100"/>
+    </resources>
+</document>
